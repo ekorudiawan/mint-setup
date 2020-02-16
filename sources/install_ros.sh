@@ -1,3 +1,4 @@
+cd ~
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu bionic main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 sudo apt update
@@ -19,5 +20,5 @@ sudo apt install ros-melodic-ros-canopen
 # Install MoveIt
 sudo apt install ros-melodic-moveit*
 # Update Gazebo Model
-hg clone https://bitbucket.org/osrf/gazebo_models
-mv gazebo_models/ ~/.gazebo/models
+mkdir -p ~/.gazebo
+hg clone https://bitbucket.org/osrf/gazebo_models ~/.gazebo/models
