@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 cd ~
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ACCAF35C
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ACCAF35C
